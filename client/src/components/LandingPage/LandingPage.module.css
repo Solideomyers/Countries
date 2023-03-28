@@ -66,17 +66,23 @@
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    color: #333;
+    color: #fff;
     width: 0;
-    animation: escribir 5s steps(100, end) forwards;
+    animation: escribir 6s steps(100, end) forwards;
+    animation-iteration-count: infinite;
   }
   
   /* animation for text */
   @keyframes escribir {
+    from {
+      width: 30%;
+      /* color: #000; */
+      text-shadow: -10px -15px 20px #000;      
+    }
     to {
       width: 100%;
-      color: #fff;
-      text-shadow: -2px -2px 1px #090909;
+      /* color: #fff; */
+      text-shadow: -2px -2px 4px #090909;
     }
   }
   

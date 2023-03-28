@@ -23,6 +23,12 @@ const Detail = () => {
         apiData()
     }, [id])
     // console.log(country)
+
+    const formatter = new Intl.NumberFormat("en-US", {
+        style:"decimal",
+        useGrouping: true
+    });
+
     return(
         <div className={Styles.containerDetail}>
         <div className={Styles.cardDetail}>
@@ -45,11 +51,11 @@ const Detail = () => {
                 </div>
                 <div>
                     <h3 className={Styles.tilesDetail}>Population:</h3>
-                    <p className={Styles.subtitlesDetail}>{country?.population}</p>
+                    <p className={Styles.subtitlesDetail}>{formatter.format(country?.population)}</p>
                 </div>
                 <div>
                     <h3 className={Styles.tilesDetail}>Area:</h3>
-                    <p className={Styles.subtitlesDetail}>{country?.area}</p>
+                    <p className={Styles.subtitlesDetail}>{formatter.format(country?.area)}</p>
                 </div>
             </section>
             <section className={Styles.pictureDetail}>

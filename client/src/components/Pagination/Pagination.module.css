@@ -20,6 +20,7 @@
   
   .btnPagination:hover {
     background-color: #444;
+    border-radius: 10px;
   }
   
   .inputPagination[type="text"] {

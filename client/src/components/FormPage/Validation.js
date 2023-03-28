@@ -2,7 +2,6 @@
 const Validation = (create) => {
     const errors = {};
     if (create.name === "") errors.name = 'Introduce a valid name!';
-    // if (!create.name.match(/[a-zA-Z]/g)) errors.name = 'The name dont be a number!, please try again.'
 
     if (create.difficulty === "") errors.difficulty = "Select a difficulty!";
 
