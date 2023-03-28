@@ -1,0 +1,58 @@
+.menu {
+    background-color: #000;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* border: 3px solid purple; */
+  }
+  
+  .menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 20px;
+    /* border: 3px solid red; */
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .menu a:hover {
+    color: #008000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu nav {
+      padding: 10px;
+    }
+  
+    .menu li {
+      margin-right: 10px;
+    }
+  
+    .menu a {
+      font-size: 16px;
+    }
+  }

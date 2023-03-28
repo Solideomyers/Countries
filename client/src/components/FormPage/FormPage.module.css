@@ -1,0 +1,88 @@
+
+/* Estilos para la caja principal */
+.boxForm {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+  }
+  
+  /* Estilos para el botón de retroceso */
+  .btnForm {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 7px 7px 14px #d1d1d1, -7px -7px 14px #ffffff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btnForm:hover {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 4px 4px 8px #d1d1d1, -4px -4px 8px #ffffff;
+    border-radius: 30px;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .containerForm input,
+  .containerForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .containerForm input:focus,
+  .containerForm select:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .containerForm label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .errorForm {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: red;
+  }
+
+  .country{
+        display: flex;
+        justify-content: stretch;
+        gap: 15px;
+        /* background-color: #333; */
+        color: #333;
+        padding: 5px;
+        /* border: 2px solid red; */
+  }
+
+  .btnCountry {
+    background-color: #333;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 3px 5px 5px #fff, -3px -5px 5px #fbfbf9;
+  }
+
+  .btnCountry:hover {
+    box-shadow: 4px 4px 3px #000, -4px -4px 3px #000;
+  }

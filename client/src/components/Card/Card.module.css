@@ -1,0 +1,143 @@
+ /* .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    width: auto;
+    
+    border: 20px solid rgb(112, 165, 42);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 10px 10px 10px #000;
+    border-color: 2px solid red;
+    background: #000;
+    opacity: 80%;
+    border-radius: 50px;
+    border: 2px solid #000;
+}
+
+.card:hover{
+    translate: 10px;
+    transition: 2s;
+}
+
+.card img {
+    width: 80%;
+    margin: 1em;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(1, 8, 14);
+} */
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* border: 3px solid red; */
+    margin: 20px;
+  }
+  
+  .links {
+    text-decoration: none;
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    backface-visibility: hidden;
+  }
+  
+  .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    will-change: transform, box-shadow;
+  }
+  
+  .cardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cardTitle {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cardSubtitle {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .cardBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    flex: 1;
+  }
+  
+  .cardImageContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+  
+  .cardImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  :root{
+    /* --shadow-color: #d1d9e6; */
+    --shadow-color: #000;
+    --box-shadow: 
+      10px 10px 20px var(--shadow-color),
+      -10px -10px 20px var(--shadow-color);
+  }
+
+  .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+
+  .card img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }

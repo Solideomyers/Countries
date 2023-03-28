@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+
+    /* border: 3px solid yellow; */
+  }
+  
+  .filter {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .filter:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 25px 25px 60px #cccccc, -25px -25px 60px #ffffff;
+  }
+  
+  .select {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .labelFilters {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .selectFilters {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
+  }
+  
+  .selectFilters:focus {
+    outline: none;
+    box-shadow: inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+  }
+  
+  .btnFilters {
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4d4dff;
+    color: #ffffff;
+    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btnFilters:hover {
+    background-color: #ffffff;
+    color: #4d4dff;
+    box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff, inset 5px 5px 10px #cccccc, inset -5px -5px 10px #ffffff;
+  }

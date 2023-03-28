@@ -1,0 +1,57 @@
+  
+  .containerHome {
+    margin: 20px;
+    background: #d1cdc7;
+    box-shadow: 6px 6px 12px #c9c2bb, -6px -6px 12px #d7d4cc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 3px solid red;
+  }
+  
+  .gridContainer {
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .gridHome {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .cardHome {
+    background-color: #d1cdc7;
+    box-shadow: 6px 6px 12px #c9c2bb, -6px -6px 12px #d7d4cc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cardHome:hover {
+    transform: scale(1.05);
+  }
+  
+  .cardHome img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .cardHome h3 {
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444444;
+  }
+  
+  .cardHome p {
+    margin: 10px;
+    font-size: 1rem;
+    color: #666666;
+  }
+  

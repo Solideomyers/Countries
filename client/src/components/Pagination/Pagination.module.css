@@ -1,0 +1,66 @@
+
+.containerPagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: sans-serif;
+    /* border: 3px solid red; */
+  }
+  
+  .btnPagination {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnPagination:hover {
+    background-color: #444;
+  }
+  
+  .inputPagination[type="text"] {
+    width: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    text-align: center;
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  .inputPagination[type="text"]:focus {
+    outline: none;
+    border-bottom-color: #000;
+  }
+  
+  .inputWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputWrapper:hover {
+    border-color: #444;
+  }
+  
+  .inputWrapper label {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-right: 2px solid #000;
+  }
+  
+  .inputWrapper span {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-left: 2px solid #000;
+  }

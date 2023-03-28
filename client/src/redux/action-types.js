@@ -1,0 +1,9 @@
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+export const GET_BY_NAME = 'GET_BY_NAME';
+export const DETAIL = 'DETAIL';
+export const GET_SORT = 'GET_SORT';
+export const CONTINENTS = 'CONTINENTS';
+export const GET_ACTIVITIES = 'GET_ACTIVITIES';
+export const CHOOSE_ACTIVITY = 'CHOOSE_ACTIVITY';
+export const POPULATION = 'POPULATION';
+export const CLEAN_FILTERS = 'CLEAN_FILTERS';
