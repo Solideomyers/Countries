@@ -36,12 +36,12 @@ const joinActivityCountry = async () => {
             }
         });
 
-        countries = countries?.map((info) => {//Transfrom the info
+        countries = countries.map((info) => {//Transfrom the info
             return{
                 id: info.id,
-                name: info.name.common,
-                flag: info.flags,
-                continent: info.continents,
+                name: info.name,
+                flag: info.flag,
+                continent: info.continent,
                 capital: info.capital,
                 subregion: info.subregion,
                 area: info.area,
@@ -86,8 +86,9 @@ const getAllCountries = async () => {
 /////////////////////////COUNTRIES BY NAME////////////////////////////////////////
 const getByName = async (name) => {
     try{
+        const allCountries = await getAllCountries();
         if(name){
-            const allCountries = await getAllCountries();
+            
             
             const countryFind = await Country.findOne({
                 where: {
@@ -96,6 +97,7 @@ const getByName = async (name) => {
                     }
                 }
             });
+            console.log(countryFind)
             if(!countryFind) return ('Country not found');
             // console.log(allCountries)
             return countryFind;
@@ -110,8 +112,9 @@ const getByName = async (name) => {
 /////////////////////////COUNTRIES BY ID////////////////////////////////////////
 const getById = async (id) => {
     try{
+        const allCountries = await getAllCountries();
         if(id){
-            const allCountries = await getAllCountries();
+            
             const countryId = await Country.findByPk(id);
             if(!countryId) return ('Country not found');
             return countryId;

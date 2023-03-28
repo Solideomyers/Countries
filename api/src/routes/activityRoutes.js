@@ -5,7 +5,7 @@ const router = Router();
 
 router.post("/", async (req, res) => {
     try{
-        //Recived info
+        //Received info
         const { name, difficulty, duration, season, country } = req.body;
         
         //Creating activity

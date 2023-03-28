@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAllCountries, getByName, getById } = require("../controllers/controller");
+const { getAllCountries, getByName, getById, getByRegion } = require("../controllers/controller");
 
 const router = Router();
 
@@ -9,7 +9,8 @@ router.get("/", async (req, res) => {
         if(name){
             const countryByName = await getByName(name);
             res.status(200).json(countryByName);
-        }else{
+        }
+        else{
             const allCountries = await getAllCountries();
             res.status(200).json(allCountries);
         }
