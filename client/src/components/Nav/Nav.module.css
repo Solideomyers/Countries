@@ -1,4 +1,11 @@
+.containerNav{
+  display: flex;
+  /* justify-content: center; */
+}
+
 .menu {
+    display: flex;
+    justify-content: space-around;
     background-color: #000;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -13,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0;
     max-width: 960px;
     padding: 20px;
     /* border: 3px solid red; */

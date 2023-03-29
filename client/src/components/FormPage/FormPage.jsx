@@ -111,12 +111,12 @@ const FormPage = () => {
               <div className={Styles.inputForm} >
                 <label >Duration</label>
                 <input
-                  type="time"
-                  
+                  type="text"
+                  step="1"
                   name="duration"
                   onChange={handleInput}
-                  min="1"
-                  max="20"
+                  pattern="\d*"
+                  maxLength="2"
                   // hidden={error.difficulty ? true : false}
                 />
               </div>
@@ -127,7 +127,6 @@ const FormPage = () => {
                 <label >Season</label>
                 <select
                   name="season"
-                  
                   onChange={handleInput}
                   // hidden={error.duration ? true : false}
                 >

@@ -95,7 +95,7 @@ const rootReducer = (state = initialState, {type, payload}) => {
         case CLEAN_FILTERS:
             return{
                 ...state,
-                sorting: state.countries
+                sorting: [...state.countries],
             }
         
         default:

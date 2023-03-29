@@ -6,7 +6,7 @@ import Styles from "./Nav.module.css";
 
 const Nav = () => {
     return(
-    <>
+    <div className={Styles.containerNav} >
       <header className={Styles.menu}>
         <nav>
           <ul>
@@ -18,7 +18,7 @@ const Nav = () => {
         <Search />
       </header>
       
-    </>
+    </div>
     )
 };
 

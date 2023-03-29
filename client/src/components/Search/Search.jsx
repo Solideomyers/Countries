@@ -15,6 +15,16 @@ const Search = () => {
         // console.log(search)
     };
 
+    const handleKeyDown = (event) => {
+        if(event.key === "Enter"){
+            if(search.length){
+                dispatch(getByName(search));
+                searchRef.current.value = "";
+    
+            }
+        }
+    }
+
     const handleSubmit = () => {
         if(search.length){
             dispatch(getByName(search));
@@ -32,6 +42,7 @@ const Search = () => {
                 id="search"
                 type="search"
                 placeholder="Your country"
+                onKeyDown={handleKeyDown}
                 onChange={(event) => handleSearch(event)}
                 // value={search}
                 ref={searchRef}

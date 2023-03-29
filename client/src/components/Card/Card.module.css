@@ -1,51 +1,10 @@
- /* .box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    align-items: flex-start;
-    width: auto;
-    
-    border: 20px solid rgb(112, 165, 42);
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin: 1em;
-    padding: 1em;
-    box-shadow: 10px 10px 10px #000;
-    border-color: 2px solid red;
-    background: #000;
-    opacity: 80%;
-    border-radius: 50px;
-    border: 2px solid #000;
-}
-
-.card:hover{
-    translate: 10px;
-    transition: 2s;
-}
-
-.card img {
-    width: 80%;
-    margin: 1em;
-}
-
-.links{
-    text-decoration: none;
-    color: rgb(1, 8, 14);
-} */
-
 .box {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     /* border: 3px solid red; */
-    margin: 20px;
+    margin-bottom: 0;
   }
   
   .links {
