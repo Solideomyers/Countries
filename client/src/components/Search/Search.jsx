@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { getByName } from "../../redux/actions";
+import { getByName, getCountries } from "../../redux/actions";
+import { Link } from "react-router-dom";
 import Styles from "./Search.module.css";
 
 
@@ -33,6 +34,10 @@ const Search = () => {
         }
     }
 
+    const handleClose = () => {
+        dispatch(getCountries())
+    }
+
 
 
     return(
@@ -49,6 +54,7 @@ const Search = () => {
                 autoComplete="off"
 
              />
+            <button className={Styles.btnCloseSearch} onClick={(event) => handleClose(event) } >Back</button>
             <button
                 className={Styles.searchButton}
                 type="submit"
