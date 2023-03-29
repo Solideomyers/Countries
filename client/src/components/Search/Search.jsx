@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { getByName, getCountries } from "../../redux/actions";
-import { Link } from "react-router-dom";
 import Styles from "./Search.module.css";
 
 

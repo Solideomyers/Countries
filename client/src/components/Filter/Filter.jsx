@@ -49,10 +49,10 @@ const Filters = () => {
 
 
     return (
-  <div class={Styles.container}>
-  <div class={Styles.filter}>
-    <div class={Styles.select}>
-      <label className={Styles.labelFilters} for="continents">Sort by Continents</label>
+  <div className={Styles.container}>
+  <div className={Styles.filter}>
+    <div className={Styles.select}>
+      <label className={Styles.labelFilters} >Sort by Continents</label>
       <select className={Styles.selectFilters} id="continents" name="Continents" ref={continentsRef} onChange={handleFilterChange}>
         <option value="all">All</option>
         <option value="Africa">Africa</option>
@@ -64,8 +64,8 @@ const Filters = () => {
         <option value="Oceania">Oceania</option>
       </select>
     </div>
-    <div class={Styles.select}>
-      <label className={Styles.labelFilters} for="activity">Sort by Activity</label>
+    <div className={Styles.select}>
+      <label className={Styles.labelFilters} htmlFor="activity">Sort by Activity</label>
       <select className={Styles.selectFilters} id="activity" name="Activity" onChange={handleFilterChange}>
         <option value="activities">Activities</option>
         {activities?.map((elem, index) => (
@@ -75,23 +75,23 @@ const Filters = () => {
         ))}
       </select>
     </div>
-    <div class={Styles.select}>
-      <label className={Styles.labelFilters} for="sort">Sort by Name</label>
+    <div className={Styles.select}>
+      <label className={Styles.labelFilters} >Sort by Name</label>
       <select className={Styles.selectFilters} id="sort" name="Sort" ref={sortRef} onChange={handleFilterChange}>
         <option value="sort">Sort</option>
         <option value="asc">A-Z</option>
         <option value="desc">Z-A</option>
       </select>
     </div>
-    <div class={Styles.select}>
-      <label className={Styles.labelFilters} for="population">Sort by Population</label>
+    <div className={Styles.select}>
+      <label className={Styles.labelFilters} >Sort by Population</label>
       <select className={Styles.selectFilters} id="population" name="Population" ref={populationRef} onChange={handleFilterChange}>
         <option value="population">Population</option>
         <option value="low">Low</option>
         <option value="high">High</option>
       </select>
     </div>
-    <div class={Styles.button}>
+    <div className={Styles.button}>
       <button className={Styles.btnFilters} onClick={handleClean}>Clean Filters</button>
     </div>
   </div>

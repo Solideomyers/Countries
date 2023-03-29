@@ -25,7 +25,7 @@ const Home = () => {
     const [perPage] = useState(10);
     const max = Math.ceil(sorting.length / perPage);
 
-    console.log(sorting)
+    // console.log(sorting)
 
     //Watch
     useEffect(() => {
@@ -47,14 +47,14 @@ const Home = () => {
           <div className={Styles.gridHome}>
             {sorting
               ?.slice((current - 1) * perPage, (current - 1) * perPage + perPage)
-              .map((country) => {
+              .map(({id, name, flag, continent}) => {
                 return (
-                  <div className={Styles.cardHome} key={country.id}>
+                  <div className={Styles.cardHome} key={id}>
                     <Card
-                      id={country.id}
-                      name={country.name}
-                      flag={country.flag}
-                      continent={country.continent}
+                      id={id}
+                      name={name}
+                      flag={flag}
+                      continent={continent}
                     />
                   </div>
                 );
