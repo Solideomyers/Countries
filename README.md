@@ -2,6 +2,28 @@
 
 # **COUNTRIES** | Proyecto Individual
 
+![GitHub contributors](https://img.shields.io/github/contributors/solideomyers/countriesapi.2.0?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/solideomyers/countriesapi.2.0?style=for-the-badge) ![GitHub forks](https://img.shields.io/github/forks/solideomyers/countriesapi.2.0?style=for-the-badge)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+* Francisco A. Myers - [![Linkedin]](https://www.linkedin.com/in/franciscomyers/) [![Github]](https://github.com/Solideomyers)
+
+
+### Proyecto mejorado y version final Link: [https://github.com/solideomyers/countriesapi.2.0](https://github.com/solideomyers/countriesapi.2.0)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[git-url]: https://git-scm.com/
+[github]: https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
+[github-url]: https://github.com/
+[Linkedin]: https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
+
 ## **📌 OBJETIVOS**
 
 -  Construir una Single Page Application utlizando las tecnologías: **React**, **Redux**, **Node**, **Express** y **Sequelize**.
